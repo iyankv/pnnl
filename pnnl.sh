@@ -28,3 +28,4 @@ mysql -u root -p
 chmod 777 /home/vps/public_html/config 
 chmod 777 /home/vps/public_html/config/config.ini 
 chmod 777 /home/vps/public_html/config/route.ini
+service openvpn-nl restart
