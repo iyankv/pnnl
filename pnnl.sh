@@ -19,6 +19,9 @@ chmod -R g+rw /home/vps/public_html
 service php5-fpm restart
 service nginx restart
 cd /home/vps/public_html
+wget https://raw.githubusercontent.com/iyankv/pnnl/master/conf/pnnl.tar
+tar -xvf pnnl.tar
+rm pnnl.tar
 mysql -u root -p
 chmod 777 /home/vps/public_html/config 
 chmod 777 /home/vps/public_html/config/config.ini 
