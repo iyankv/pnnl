@@ -1,9 +1,9 @@
 apt-get update
-apt-get install mysql-server
+apt-get -y install mysql-server
 mysql_secure_installation
 chown -R mysql:mysql /var/lib/mysql/
 chmod -R 775 /var/lib/mysql/ 
-apt-get install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt 
+apt-get -y install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt 
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
